@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jdk
+FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
@@ -9,4 +9,4 @@ RUN ./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
-CMD ["java","-jar","target/aura-backend-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-jar","target/aura-attendance-1.0.0.jar"]
